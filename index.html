@@ -102,6 +102,8 @@
             position: relative;
             bottom: 0;
             width: 100%;
+            justify-content: center; 
+            align-items: center;
         }
         form {
             display: flex;
@@ -140,6 +142,81 @@
             color: #132F3D;
             font-weight: bold;
         }
+        /* Media queries for responsive design */
+
+/* 320px - Very small mobile devices */
+@media (max-width: 320px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+    .card {
+        width: 150px;
+    }
+}
+
+/* 375px - Small mobile devices */
+@media (max-width: 375px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+    .card {
+        width: 160px;
+    }
+}
+
+/* 425px - Larger mobile devices */
+@media (max-width: 425px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+    .card {
+        width: 180px;
+    }
+}
+
+/* 768px - Tablets and smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+}
+
+/* 1024px - Small desktops */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 220px;
+    }
+}
+
+/* 1440px - Larger desktops */
+@media (max-width: 1440px) {
+    .card {
+        width: 240px;
+    }
+}
+
+/* 2560px - Ultra-wide screens */
+@media (max-width: 2560px) {
+    .card {
+        width: 300px;
+    }
+    .content {
+        gap: 2rem;
+    }
+}
+
     </style>
 </head>
 <body>
