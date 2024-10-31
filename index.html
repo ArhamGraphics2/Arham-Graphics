@@ -142,7 +142,78 @@
             color: #132F3D;
             font-weight: bold;
         }
-        /* Media queries for responsive design */
+        /* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero section */
+.hero {
+    background: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Content section */
+.content {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Media queries for responsive design */
 
 /* 320px - Very small mobile devices */
 @media (max-width: 320px) {
@@ -216,6 +287,7 @@
         gap: 2rem;
     }
 }
+
 
     </style>
 </head>
@@ -320,4 +392,5 @@
         <p><h1>Thank You! Contact Us Now.</h1></p>
     </footer>
 </body>
+
 </html>
